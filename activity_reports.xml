@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444501"
+    tools:context="com.example.user.emergencyapps.Reports">
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="404dp"
+        android:layout_height="35dp">
+        <ImageView
+            android:id="@+id/backicon"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reprot here"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold"
+            android:textColor="#def7f6f6"/>
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu"
+            android:onClick="showPopup" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="49dp">
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/sendreport"
+            android:text="Upload"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/sendreport"
+            android:text="Camera"
+            android:textAllCaps="false"
+
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sendreport"
+            android:text="Video"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/reportimage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="120dp"
+        android:background="#ffff" />
+
+    <ProgressBar
+        android:id="@+id/reportprogress"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/spiner"
+        android:layout_marginTop="280dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/crimetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Crime Type"
+            android:textColor="#def5fab8"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <TextView
+        android:textSize="20sp"
+        android:layout_below="@+id/spiner"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="#def1f1b0"
+        android:layout_gravity="center"
+        android:id="@+id/myemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"/>
+
+    <FrameLayout
+        android:layout_below="@id/myemail"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffff">
+
+        <EditText
+            android:id="@+id/reportdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/sendsupport"
+        android:layout_alignParentBottom="true"
+        android:layout_width="80dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/sendreport"
+        android:src="@drawable/send" />
+</RelativeLayout>

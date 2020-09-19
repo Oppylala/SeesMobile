@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2BEB5"
+    tools:context="com.example.user.emergencyapps.UserSupport">
+
+    <LinearLayout
+        android:background="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/linearLayout4">
+        <ImageView
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:src="@drawable/backarrow"
+            android:id="@+id/backicon"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginLeft="87dp"
+            android:textColor="#de00"
+            android:textStyle="bold"
+
+            android:layout_gravity="center"
+            android:text="Support page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="105dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu"
+            android:onClick="showPopup" />
+
+    </LinearLayout>
+    <View
+        android:background="#ffff"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <TextView
+        android:text="Write your support here"
+        android:textAlignment="center"
+        android:textColor="#0D5D98"
+        android:layout_marginTop="70dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/supportprogress"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="100dp"
+        android:background="#de000000"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="210dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:hint="Email Address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="30dp"
+            android:textSize="20sp"
+            android:id="@+id/supportemail"
+            android:background="@drawable/editext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/supportphone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="30dp"
+            android:textSize="20sp"
+            android:background="@drawable/editext"
+            android:hint="Phone Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ffff">
+        <EditText
+            android:id="@+id/supportdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:hint="Write your support here"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sendreport"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+       android:layout_marginLeft="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/sendreport"
+        android:src="@drawable/send" />
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/createacc"
+    tools:context="com.example.user.emergencyapps.CreateAccount">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="600dp">
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:paddingLeft="20dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:background="@drawable/editext"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:layout_below="@+id/signupprogress"
+       android:layout_marginLeft="40dp"
+        android:layout_marginTop="270dp" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="300dp"
+        android:paddingLeft="20dp"
+        android:layout_height="40dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:paddingLeft="20dp"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/phonenumber"
+        android:layout_alignLeft="@+id/phonenumber"
+        android:layout_alignStart="@+id/phonenumber"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="300dp"
+        android:paddingLeft="20dp"
+        android:layout_height="40dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:background="@drawable/sendreport"
+        android:text="Create Account"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="30dp"
+       />
+
+    <ProgressBar
+        android:id="@+id/signupprogress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create"
+        android:layout_centerHorizontal="true" />
+
+
+
+        <TextView
+            android:id="@+id/pagelog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account? Login"
+            android:textColor="#150000"
+            android:textStyle="bold"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_below="@+id/confirmpassword"
+            android:layout_alignLeft="@+id/create"
+            android:layout_alignStart="@+id/create"
+            android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Emergency"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+</ScrollView>

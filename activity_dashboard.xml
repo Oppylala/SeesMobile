@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02082C"
+    tools:context="com.example.user.emergencyapps.Dashboard">
+
+       <RelativeLayout
+           android:background="#080116"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/username"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:text="Username"
+               android:layout_gravity="center"
+               android:textColor="#ffffff"
+               android:textSize="20sp"
+               android:layout_marginTop="40dp"
+               android:paddingLeft="20dp"
+               android:textStyle="bold"/>
+           <ImageView
+
+               android:src="@drawable/userimage"
+               android:layout_width="65dp"
+               android:layout_height="70dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_alignParentRight="true"/>
+
+
+       </RelativeLayout>
+
+
+
+
+    <View
+        android:layout_marginTop="100dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:id="@+id/RoadAccident"
+                    android:src="@drawable/roadaccidenticon"
+                    android:layout_width="100dp"
+                    android:layout_height="78dp"
+                    android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/accident"
+                android:text="Road Accident"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+               >
+            <ImageView
+                android:id="@+id/FireIncident"
+                android:src="@drawable/fireaccidenticon"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/fire"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Fire Incident"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="40dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+            <ImageView
+                android:id="@+id/MurderReport"
+                android:src="@drawable/murder"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/murder"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Murder Report"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+</LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+            <ImageView
+                android:id="@+id/DrugAbuse"
+                android:src="@drawable/drugabuseicon"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/drug"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Drug Abuse"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+            <ImageView
+                android:id="@+id/SexualAbuse"
+                android:src="@drawable/sexualabuseicon"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/sexual"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sexual Abuse "
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+</LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+            <ImageView
+                android:id="@+id/Kidnapping"
+                android:src="@drawable/kidnapingicon"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/kidnap"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Kidnapping "
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+               />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+            <ImageView
+                android:id="@+id/ArmedRobbery"
+                android:src="@drawable/armed"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/armed"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Armed Robberry"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+</LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+            <ImageView
+                android:id="@+id/Medical"
+                android:src="@drawable/medical"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Medical"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                />
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+    </ScrollView>
+<RelativeLayout
+    android:background="#fff"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:background="@drawable/notification"
+        android:foregroundGravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:background="@drawable/homep"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.emergencyapps.UserNotification">
+
+    <LinearLayout
+        android:background="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/linearLayout4">
+        <ImageView
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:src="@drawable/backarrow"
+            android:id="@+id/backicon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginLeft="107dp"
+            android:textColor="#de00"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="115dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu"
+            android:onClick="showPopup" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/usernotification"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
